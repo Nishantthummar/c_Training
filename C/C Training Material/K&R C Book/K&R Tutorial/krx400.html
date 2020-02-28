@@ -1,0 +1,405 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="krx400_files/filelist.xml">
+<title> The C Programming Language Exercises 4-3 through 4-10 </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dhruvesh</o:Author>
+  <o:LastAuthor>Dhruvesh</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2007-10-31T06:56:00Z</o:Created>
+  <o:LastSaved>2007-10-31T06:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>402</o:Words>
+  <o:Characters>2293</o:Characters>
+  <o:Lines>19</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2690</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	color:black;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:maroon;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:navy;
+	text-decoration:underline;
+	text-underline:single;}
+code
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:SimSun;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:SimSun;
+	color:black;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#DDDDDD" lang=EN-US link=maroon vlink=navy style='tab-interval:
+.5in' alink="#008000">
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center'>&quot;The C Programming
+Language&quot;, 2nd edition, Kernighan and Ritchie </h2>
+
+<h3 align=center style='text-align:center'>Base source code on which to build
+solutions to exercises 4-3 through 4-10. </h3>
+
+<h4 align=center style='text-align:center'>This text is a pretty straight quote
+from K&amp;R. </h4>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><code><span style='font-size:
+10.0pt'><o:p>&nbsp;</o:p></span></code></p>
+
+<pre><o:p>&nbsp;</o:p></pre><pre><span style='color:teal'>/* this program forms the basis on which exercises 4-3 through 4-10 build */</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:blue'>#include &lt;stdio.h&gt;</span></b></pre><pre><b><span
+style='color:blue'>#include &lt;stdlib.h&gt; /* for atof() - in K&amp;R, math.h is referenced - this is an anachronism */</span></b></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:blue'>#define MAXOP 100 /* max size of operand or operator */</span></b></pre><pre><b><span
+style='color:blue'>#define NUMBER '0' /* signal that a number was found */</span></b></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:navy'>int</span></b> <span style='color:green'>getop</span><span
+style='color:navy'>(<b>char</b></span> <span style='color:navy'>[]);</span></pre><pre><b><span
+style='color:navy'>void</span></b> <span style='color:green'>push</span><span
+style='color:navy'>(<b>double</b>);</span></pre><pre><b><span style='color:
+navy'>double</span></b> <span style='color:green'>pop</span><span
+style='color:navy'>(<b>void</b>);</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span
+style='color:teal'>/* reverse Polish calculator */</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:navy'>int</span></b> <span style='color:green'>main</span><span
+style='color:navy'>(<b>void</b>)</span></pre><pre><span style='color:navy'>{</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>int</span></b> <span style='color:green'>type</span><span
+style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>double</span></b> <span style='color:green'>op2</span><span
+style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>char</span></b> <span style='color:green'>s</span><span
+style='color:navy'>[</span><span style='color:green'>MAXOP</span><span
+style='color:navy'>];</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>while</span></b><span style='color:navy'>((</span><span
+style='color:green'>type</span> <span style='color:navy'>=</span> <span
+style='color:green'>getop</span><span style='color:navy'>(</span><span
+style='color:green'>s</span><span style='color:navy'>))</span> <span
+style='color:navy'>!=</span> <span style='color:green'>EOF</span><span
+style='color:navy'>)</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><span
+style='color:navy'>{</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>switch</span></b><span style='color:navy'>(</span><span
+style='color:green'>type</span><span style='color:navy'>)</span></pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span><span
+style='color:navy'>{</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>case</span></b> <span style='color:green'>NUMBER</span><span
+style='color:navy'>:</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>push</span><span style='color:navy'>(</span><span
+style='color:green'>atof</span><span style='color:navy'>(</span><span
+style='color:green'>s</span><span style='color:navy'>));</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>break</span></b><span style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>case</span></b> <b>'+'</b><span style='color:navy'>:</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>push</span><span style='color:navy'>(</span><span
+style='color:green'>pop</span><span style='color:navy'>()</span> <span
+style='color:navy'>+</span> <span style='color:green'>pop</span><span
+style='color:navy'>());</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>break</span></b><span style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>case</span></b> <b>'*'</b><span style='color:navy'>:</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>push</span><span style='color:navy'>(</span><span
+style='color:green'>pop</span><span style='color:navy'>()</span> <span
+style='color:navy'>*</span> <span style='color:green'>pop</span><span
+style='color:navy'>());</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>break</span></b><span style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>case</span></b> <b>'-'</b><span style='color:navy'>:</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>op2</span> <span style='color:navy'>=</span> <span
+style='color:green'>pop</span><span style='color:navy'>();</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>push</span><span style='color:navy'>(</span><span
+style='color:green'>pop</span><span style='color:navy'>()</span> <span
+style='color:navy'>-</span> <span style='color:green'>op2</span><span
+style='color:navy'>);</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>break</span></b><span style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>case</span></b> <b>'/'</b><span style='color:navy'>:</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>op2</span> <span style='color:navy'>=</span> <span
+style='color:green'>pop</span><span style='color:navy'>();</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>if</span></b><span style='color:navy'>(</span><span
+style='color:green'>op2</span> <span style='color:navy'>!=</span> <b>0.0</b><span
+style='color:navy'>)</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>push</span><span style='color:navy'>(</span><span
+style='color:green'>pop</span><span style='color:navy'>()</span> <span
+style='color:navy'>/</span> <span style='color:green'>op2</span><span
+style='color:navy'>);</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>else</span></b></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>printf</span><span style='color:navy'>(</span>&quot;error: zero divisor\n&quot;<span
+style='color:navy'>);</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>break</span></b><span style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>case</span></b> <b>'\n'</b><span style='color:navy'>:</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>printf</span><span style='color:navy'>(</span>&quot;\t%.8g\n&quot;<span
+style='color:navy'>,</span> <span style='color:green'>pop</span><span
+style='color:navy'>());</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>break</span></b><span style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>default</span></b><span style='color:navy'>:</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='mso-spacerun:yes'>&nbsp;</span><span
+style='color:green'>printf</span><span style='color:navy'>(</span>&quot;error: unknown command %s\n&quot;<span
+style='color:navy'>,</span> <span style='color:green'>s</span><span
+style='color:navy'>);</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>break</span></b><span style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+style='color:navy'>}</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><span
+style='color:navy'>}</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>return</span></b> <b>0</b><span style='color:navy'>;</span></pre><pre><span
+style='color:navy'>}</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:blue'>#define MAXVAL<span style='mso-spacerun:yes'>&nbsp; </span>100 /* maximum depth of val stack */</span></b></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:navy'>int</span></b> <span style='color:green'>sp</span> <span
+style='color:navy'>=</span> <b>0</b><span style='color:navy'>;</span> <span
+style='color:teal'>/* next free stack position */</span></pre><pre><b><span
+style='color:navy'>double</span></b> <span style='color:green'>val</span><span
+style='color:navy'>[</span><span style='color:green'>MAXVAL</span><span
+style='color:navy'>];</span> <span style='color:teal'>/* value stack */</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span
+style='color:teal'>/* push: push f onto value stack */</span></pre><pre><b><span
+style='color:navy'>void</span></b> <span style='color:green'>push</span><span
+style='color:navy'>(<b>double</b></span> <span style='color:green'>f</span><span
+style='color:navy'>)</span></pre><pre><span style='color:navy'>{</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>if</span></b><span style='color:navy'>(</span><span
+style='color:green'>sp</span> <span style='color:navy'>&lt;</span> <span
+style='color:green'>MAXVAL</span><span style='color:navy'>)</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>val</span><span style='color:navy'>[</span><span
+style='color:green'>sp</span><span style='color:navy'>++]</span> <span
+style='color:navy'>=</span> <span style='color:green'>f</span><span
+style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>else</span></b></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>printf</span><span style='color:navy'>(</span>&quot;error: stack full, can't push %g\n&quot;<span
+style='color:navy'>,</span> <span style='color:green'>f</span><span
+style='color:navy'>);</span></pre><pre><span style='color:navy'>}</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span
+style='color:teal'>/* pop: pop and return top value from stack */</span></pre><pre><b><span
+style='color:navy'>double</span></b> <span style='color:green'>pop</span><span
+style='color:navy'>(<b>void</b>)</span></pre><pre><span style='color:navy'>{</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>if</span></b><span style='color:navy'>(</span><span
+style='color:green'>sp</span> <span style='color:navy'>&gt;</span> <b>0</b><span
+style='color:navy'>)</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>return</span></b> <span style='color:green'>val</span><span
+style='color:navy'>[--</span><span style='color:green'>sp</span><span
+style='color:navy'>];</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>else</span></b></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><span
+style='color:navy'>{</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>printf</span><span style='color:navy'>(</span>&quot;error: stack empty\n&quot;<span
+style='color:navy'>);</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>return</span></b> <b>0.0</b><span style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><span
+style='color:navy'>}</span></pre><pre><span style='color:navy'>}</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:blue'>#include &lt;ctype.h&gt;</span></b></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:navy'>int</span></b> <span style='color:green'>getch</span><span
+style='color:navy'>(<b>void</b>);</span></pre><pre><b><span style='color:navy'>void</span></b> <span
+style='color:green'>ungetch</span><span style='color:navy'>(<b>int</b>);</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span
+style='color:teal'>/* getop: get next operator or numeric operand */</span></pre><pre><b><span
+style='color:navy'>int</span></b> <span style='color:green'>getop</span><span
+style='color:navy'>(<b>char</b></span> <span style='color:green'>s</span><span
+style='color:navy'>[])</span></pre><pre><span style='color:navy'>{</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>int</span></b> <span style='color:green'>i</span><span
+style='color:navy'>,</span> <span style='color:green'>c</span><span
+style='color:navy'>;</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>while</span></b><span style='color:navy'>((</span><span
+style='color:green'>s</span><span style='color:navy'>[</span><b>0</b><span
+style='color:navy'>]</span> <span style='color:navy'>=</span> <span
+style='color:green'>c</span> <span style='color:navy'>=</span> <span
+style='color:green'>getch</span><span style='color:navy'>())</span> <span
+style='color:navy'>==</span> <b>' '</b> <span style='color:navy'>||</span> <span
+style='color:green'>c</span> <span style='color:navy'>==</span> <b>'\t'</b><span
+style='color:navy'>)</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+style='color:navy'>;</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><span
+style='color:green'>s</span><span style='color:navy'>[</span><b>1</b><span
+style='color:navy'>]</span> <span style='color:navy'>=</span> <b>'\0'</b><span
+style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>if</span></b><span style='color:navy'>(!</span><span
+style='color:green'>isdigit</span><span style='color:navy'>(</span><span
+style='color:green'>c</span><span style='color:navy'>)</span> <span
+style='color:navy'>&amp;&amp;</span> <span style='color:green'>c</span> <span
+style='color:navy'>!=</span> <b>'.'</b><span style='color:navy'>)</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>return</span></b> <span style='color:green'>c</span><span
+style='color:navy'>;</span> <span style='color:teal'>/* not a number */</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><span
+style='color:green'>i</span> <span style='color:navy'>=</span> <b>0</b><span
+style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>if</span></b><span style='color:navy'>(</span><span
+style='color:green'>isdigit</span><span style='color:navy'>(</span><span
+style='color:green'>c</span><span style='color:navy'>))</span> <span
+style='color:teal'>/* collect integer part */</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>while</span></b><span style='color:navy'>(</span><span
+style='color:green'>isdigit</span><span style='color:navy'>(</span><span
+style='color:green'>s</span><span style='color:navy'>[++</span><span
+style='color:green'>i</span><span style='color:navy'>]</span> <span
+style='color:navy'>=</span> <span style='color:green'>c</span> <span
+style='color:navy'>=</span> <span style='color:green'>getch</span><span
+style='color:navy'>()))</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>if</span></b><span style='color:navy'>(</span><span
+style='color:green'>c</span> <span style='color:navy'>==</span> <b>'.'</b><span
+style='color:navy'>)</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><b><span
+style='color:navy'>while</span></b><span style='color:navy'>(</span><span
+style='color:green'>isdigit</span><span style='color:navy'>(</span><span
+style='color:green'>s</span><span style='color:navy'>[++</span><span
+style='color:green'>i</span><span style='color:navy'>]</span> <span
+style='color:navy'>=</span> <span style='color:green'>c</span> <span
+style='color:navy'>=</span> <span style='color:green'>getch</span><span
+style='color:navy'>()))</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><span
+style='color:green'>s</span><span style='color:navy'>[</span><span
+style='color:green'>i</span><span style='color:navy'>]</span> <span
+style='color:navy'>=</span> <b>'\0'</b><span style='color:navy'>;</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>if</span></b><span style='color:navy'>(</span><span
+style='color:green'>c</span> <span style='color:navy'>!=</span> <span
+style='color:green'>EOF</span><span style='color:navy'>)</span></pre><pre> <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span><span
+style='color:green'>ungetch</span><span style='color:navy'>(</span><span
+style='color:green'>c</span><span style='color:navy'>);</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>return</span></b> <span style='color:green'>NUMBER</span><span
+style='color:navy'>;</span></pre><pre><span style='color:navy'>}</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:blue'>#define BUFSIZE 100</span></b></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:navy'>char</span></b> <span style='color:green'>buf</span><span
+style='color:navy'>[</span><span style='color:green'>BUFSIZE</span><span
+style='color:navy'>];</span> <span style='color:teal'>/* buffer for ungetch */</span></pre><pre><b><span
+style='color:navy'>int</span></b> <span style='color:green'>bufp</span> <span
+style='color:navy'>=</span> <b>0</b><span style='color:navy'>;</span> <span
+style='color:teal'>/* next free position in buf */</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:navy'>int</span></b> <span style='color:green'>getch</span><span
+style='color:navy'>(<b>void</b>)</span> <span style='color:teal'>/* get a (possibly pushed back) character */</span></pre><pre><span
+style='color:navy'>{</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>return</span></b> <span style='color:navy'>(</span><span
+style='color:green'>bufp</span> <span style='color:navy'>&gt;</span> <b>0</b><span
+style='color:navy'>)</span> <span style='color:navy'>?</span> <span
+style='color:green'>buf</span><span style='color:navy'>[--</span><span
+style='color:green'>bufp</span><span style='color:navy'>]</span> <span
+style='color:navy'>:</span> <span style='color:green'>getchar</span><span
+style='color:navy'>();</span></pre><pre><span style='color:navy'>}</span></pre><pre><o:p>&nbsp;</o:p></pre><pre><b><span
+style='color:navy'>void</span></b> <span style='color:green'>ungetch</span><span
+style='color:navy'>(<b>int</b></span> <span style='color:green'>c</span><span
+style='color:navy'>)</span> <span style='color:teal'>/* push character back on input */</span></pre><pre><span
+style='color:navy'>{</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>if</span></b><span style='color:navy'>(</span><span
+style='color:green'>bufp</span> <span style='color:navy'>&gt;=</span> <span
+style='color:green'>BUFSIZE</span><span style='color:navy'>)</span></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>printf</span><span style='color:navy'>(</span>&quot;ungetch: too many characters\n&quot;<span
+style='color:navy'>);</span></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><b><span
+style='color:navy'>else</span></b></pre><pre><span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span
+style='color:green'>buf</span><span style='color:navy'>[</span><span
+style='color:green'>bufp</span><span style='color:navy'>++]</span> <span
+style='color:navy'>=</span> <span style='color:green'>c</span><span
+style='color:navy'>;</span></pre><pre><span style='color:navy'>}</span></pre><pre><o:p>&nbsp;</o:p></pre>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><a href="krx4.html">Back to
+index </a><br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></p>
+
+</div>
+
+</body>
+
+</html>

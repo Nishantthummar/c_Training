@@ -1,0 +1,3 @@
+Question =>How would you test the word count program? What kinds of input are most likely to uncover bugs if there are any?
+
+Answer => To find out bugs in program I give input first character word then number more than two digit, give white space like tab, new line etc. check if it count white space or not. give some special character like -,+,=,< etc. From that I will find out bugs in program.

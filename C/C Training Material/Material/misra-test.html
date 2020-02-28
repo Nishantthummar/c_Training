@@ -1,0 +1,406 @@
+<html><title>CodeCheck - MISRA C Test Suite - misra-c.ccp</title><body><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2>
+<pre><a href=misra-index.html>Abraxas/Misra Home</a>  <a href=toc.html>Table of Contents</a>  MISRA is a registered trademark of <a href=http://www.misra.org.uk>www.misra.uk.org</a></pre><hr><h1>CodeCheck Rule-Files for MISRA-C:1998/MISRA-C:2004 - misra-c.ccp</h1><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 1: Required */</h4><h4>/* ISO 9899 conformance. */</h4><h4>/* This requires a toolset to be run against the FIPS 160 compiler */</h4><h4>/* validation suite or equivalent. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 2: Advisory */</h4><h4>/* Interfaces to other languages. */</h4><h4>/* Not automatically enforceable. Requires manual inspection techniques. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 3: Advisory */</h4><h4>/* Interfaces to other assembly languages. */</h4><h4>/* Inline assembly language violates Rule 1. */</h4><h4>/* Calling a function is not automatically enforceable and */</h4><h4>/* requires manual inspection techniques. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 4: Advisory */</h4><h4>/* Provision should be made for run-time checking. */</h4><h4>/* Not automatically enforceable. Requires manual inspection techniques. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 5: Required */</h4><h4>/* Non ISO C characters. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule5></a><a href=m05.html#rule5>rule5</a>
+<h4>/* The official 91-character set. */</h4><h4>/* Checker should produce no messages. */</h4><h4>/* An extended character. */</h4><h4>/* Checker should warn. ( Note cannot test for all eventualities, */</h4><h4>/* there are simply too many, although the coding in the checker is */</h4><h4>/* easy. If done correctly, one counter-example should be enough ) . */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 6: Required */</h4><h4>/* ISO 10646-1 conformance. */</h4><h4>/* Not automatically enforceable. Requires manual inspection techniques. */</h4><h4>/* C++ */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 7: Required */</h4><h4>/* No trigraphs */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule7></a><a href=m07.html#rule7>rule7</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 8: Required */</h4><h4>/* No multibyte characters or wide string literals */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule8></a><a href=m08.html#rule8>rule8</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 9: Required */</h4><h4>/* No nested comments */</h4><h4>/* RULE 9 */</h4><h4>/* more */	/* rule 9 comment in comment, supported by codecheck -N option */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 10: Advisory */</h4><h4>/* Code shall not be commented out. */</h4><h4>/* Not automatically enforceable. Requires manual inspection techniques. */</h4><h4>*	Rule 10:	Advisory</h4><h4>*	Code shall not be commented out.</h4><h4>*	Not automatically enforceable. Requires manual inspection techniques.</h4><h4>/* int foo; */</h4><h4>main() {</h4><h4>int important;</h4><h4>return;</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 11: Required */</h4><h4>/* No reliance on more than 31 character significance. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule11></a><a href=m11.html#rule11>rule11</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 12: Advisory */</h4><h4>/* Identifiers in different name spaces shall have different spelling. */</h4><h4>/* x is first used in function prototype namespace. */</h4><h4>/* x is now used in structure tag and structure member namespace. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func12></a><a href=m12.html#func12>func12</a>
+<h4>/* x is now used in the remaining name space. */</h4><h4>/* x is used in the label name space */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 13: Advisory */</h4><h4>/* The basic types char, short, int, long, float and double should not */</h4><h4>/* be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule13></a><a href=m13.html#rule13>rule13</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 14: Required */</h4><h4>/* char should only be used with the signed or unsigned keyword. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule14></a><a href=m14.html#rule14>rule14</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 15: Advisory */</h4><h4>/* Floating point implementations should comply with a defined */</h4><h4>/* floating point standard. */</h4><h4>/* Not automatically enforceable. Requires use of packages such as */</h4><h4>/* paranoia. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 16: Required */</h4><h4>/* Underlying floating point bit representations should not be used. */</h4><h4>/* Not automatically enforceable. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=m16></a><a href=m16.html#m16>m16</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 17: Required */</h4><h4>/* typedef names shall not be reused. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=m17></a><a href=m17.html#m17>m17</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 18: Advisory */</h4><h4>/* Numeric constants should be suffixed to indicate type if an */</h4><h4>/* appropriate suffix is available. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule18></a><a href=m18.html#rule18>rule18</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 19: Required */</h4><h4>/* Octal constants ( other than zero ) shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule19></a><a href=m19.html#rule19>rule19</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 20: Required */</h4><h4>/* All object and function identifiers shall be declared before use. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule20></a><a href=m20.html#rule20>rule20</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 21: Required */</h4><h4>/* Identifiers in an inner scope shall not mask identifiers in an */</h4><h4>/* outer scope. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func21></a><a href=m21.html#func21>func21</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func21a></a><a href=m21.html#func21a>func21a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 22: Advisory */</h4><h4>/* Declarations should be at function scope unless a wider scope is */</h4><h4>/* necessary. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 23: Advisory */</h4><h4>/* All declarations at file scope should be static where possible. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func23></a><a href=m23.html#func23>func23</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule23></a><a href=m23.html#rule23>rule23</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 24: Required */</h4><h4>/* Identifiers shall not have internal and external linkage */</h4><h4>/* simultaneously in the same translation unit. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule24></a><a href=m24.html#rule24>rule24</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 25: Required */</h4><h4>/* An identifier with external linkage shall have exactly one */</h4><h4>/* external definition. */</h4><h4>/* The use of rule24 ( ) is deliberate below. There is another one */</h4><h4>/* elsewhere. The checking tool should find this if it sees the */</h4><h4>/* whole of the compliance suite at once. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule24></a><a href=m25.html#rule24>rule24</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 26: Required */</h4><h4>/* If objects are declared more than once they shall be declared */</h4><h4>/* compatibly. */</h4><h4>/* See also rule 27 for xi declaration. */</h4><h4>/* The use of rule24 ( ) is deliberate below. There is another one */</h4><h4>/* elsewhere. The checking tool should find this if it sees the */</h4><h4>/* whole of the compliance suite at once. The other one is defined as */</h4><h4>/* type SI_32. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule24></a><a href=m26.html#rule24>rule24</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 27: Advisory */</h4><h4>/* Objects should be declared as extern in only one file. */</h4><h4>/* xi is also declared extern in misra_r26.c */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 28: Required */</h4><h4>/* The register storage class should not be used. */</h4><h4>/* The use of rule24 ( ) is deliberate below. There is another one */</h4><h4>/* elsewhere. The checking tool should find this if it sees the */</h4><h4>/* whole of the compliance suite at once. The other one is defined as */</h4><h4>/* type SI_32. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule28></a><a href=m28.html#rule28>rule28</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 29: Required */</h4><h4>/* The use of a tag should be consistent with the declaration. */</h4><h4>/* This is covered by Rule 1. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=f29></a><a href=m29.html#f29>f29</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 30: Required */</h4><h4>/* All automatic variables shall have been assigned a value before */</h4><h4>/* being used. */</h4><h4>/* This is not automatically detectable statically in all cases but */</h4><h4>/* the following should exercise a tool. */</h4><h4>/* The use of rule24 ( ) is deliberate below. There is another one */</h4><h4>/* elsewhere. The checking tool should find this if it sees the */</h4><h4>/* whole of the compliance suite at once. The other one is defined as */</h4><h4>/* type SI_32. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule28></a><a href=m30.html#rule28>rule28</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 31: Required */</h4><h4>/* Braces shall be used to indicate and match the structure in the */</h4><h4>/* non-zero initialisation of arrays and structures. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 32: Required */</h4><h4>/* In an enumerator list, the '=' construct shall not be used to */</h4><h4>/* explicitly initialise members other than the first, unless all */</h4><h4>/* items are explicitly initialised. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 33: Required */</h4><h4>/* The right hand side of a && or || operator shall not contain */</h4><h4>/* side-effects. */</h4><h4>/* This is not automatically detectable statically in all cases but */</h4><h4>/* the following should exercise a tool. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule33></a><a href=m33.html#rule33>rule33</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 34: Required */</h4><h4>/* The operands of a logical && or || shall be primary expressions. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule34></a><a href=m34.html#rule34>rule34</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 35: Required */</h4><h4>/* Assignment operators shall not be used in expressions which return */</h4><h4>/* Boolean values. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule35></a><a href=m35.html#rule35>rule35</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 36: Advisory */</h4><h4>/* Logical operators should not be confused with bitwise operators. */</h4><h4>/* Not automatically enforceable. Requires manual inspection techniques. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=main></a><a href=m36.html#main>main</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 37: Required */</h4><h4>/* Bitwise operations shall not be performed on signed integer types. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule37></a><a href=m37.html#rule37>rule37</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 38: Required */</h4><h4>/* The right hand operand of a shift operator shall lie between zero */</h4><h4>/* and one less than the width in bits of the left hand operand */</h4><h4>/* ( inclusive ) . */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule38></a><a href=m38.html#rule38>rule38</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 39: Required */</h4><h4>/* The unary minus operator shall not be applied to an unsigned */</h4><h4>/* expression. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule39></a><a href=m39.html#rule39>rule39</a>
+<h4>/* error - Test failed. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 40: Advisory */</h4><h4>/* The sizeof operator should not be used on expressions that contain */</h4><h4>/* side effects. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule40></a><a href=m40.html#rule40>rule40</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 41: Advisory */</h4><h4>/* The implementation of integer division in the chosen compiler */</h4><h4>/* should be determined, documented and taken into account. */</h4><h4>/* This is not enforceable but there are some troublesome cases which */</h4><h4>/* are worth flagging if the static analyser is sufficiently */</h4><h4>/* sophisticated. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule41></a><a href=m41.html#rule41>rule41</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 42: Required */</h4><h4>/* The comma operator shall not be used, except in the control */</h4><h4>/* expression of a for loop. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule42></a><a href=m42.html#rule42>rule42</a>
+<h4>/* DO NOTHING */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 43: Required */</h4><h4>/* Implicit conversions which may result in a loss of information */</h4><h4>/* shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule43></a><a href=m43.html#rule43>rule43</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 44: Advisory */</h4><h4>/* Redundant explicit casts should not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule44></a><a href=m44.html#rule44>rule44</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 45: Required */</h4><h4>/* Type casting from any type to or from pointers shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule45></a><a href=m45.html#rule45>rule45</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 46: Required */</h4><h4>/* The value of an expression shall be the same under any order of */</h4><h4>/* evaluation that the standard permits. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func46a></a><a href=m46.html#func46a>func46a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule46></a><a href=m46.html#rule46>rule46</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 47: Required */</h4><h4>/* No dependence should be placed on C's operator precedence rules in */</h4><h4>/* expressions. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule47></a><a href=m47.html#rule47>rule47</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 48: Advisory */</h4><h4>/* Mixed precision arithmetic should use explicit casting to generate */</h4><h4>/* the desired result. */</h4><h4>/* Not automatically detectable statically in all cases. The */</h4><h4>/* following should give an indication. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule48></a><a href=m48.html#rule48>rule48</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 49: Advisory */</h4><h4>/* Tests of a value against zero should be made explicit, unless the */</h4><h4>/* operator is effectively Boolean. */</h4><h4>/* Not automatically detectable statically in all cases. Tools can */</h4><h4>/* either warn on all or no occurrences in general. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule49></a><a href=m49.html#rule49>rule49</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 50: Required */</h4><h4>/* Floating point variables shall not be tested for exact equality or */</h4><h4>/* inequality. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule50></a><a href=m50.html#rule50>rule50</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 51: Advisory */</h4><h4>/* Evaluation of constant unsigned integer expressions should not lead */</h4><h4>/* to wrap-around. */</h4><h4>/* # error */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 52: Required */</h4><h4>/* There shall be no unreachable code. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule52></a><a href=m52.html#rule52>rule52</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 53: Required */</h4><h4>/* All non-null statements shall have a side-effect. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule53></a><a href=m53.html#rule53>rule53</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 54: Required */</h4><h4>/* A null statement shall only occur on a line by itself, and shall */</h4><h4>/* not have any other text on the same line. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule54></a><a href=m54.html#rule54>rule54</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 55: Advisory */</h4><h4>/* Labels should not be used, except in switch statements. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule55></a><a href=m55.html#rule55>rule55</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 56: Required */</h4><h4>/* The goto statement shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule56></a><a href=m56.html#rule56>rule56</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 57: Required */</h4><h4>/* The continue statement shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule57></a><a href=m57.html#rule57>rule57</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 58: Required */</h4><h4>/* The break statement shall not be used ( except to terminate the */</h4><h4>/* cases of a switch statement ) . */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule58></a><a href=m58.html#rule58>rule58</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 59: Required */</h4><h4>/* The statements forming the body of an if, else if, else, while, do */</h4><h4>/* ... while or for statement shall always be enclosed in braces. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule59></a><a href=m59.html#rule59>rule59</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 60: Advisory */</h4><h4>/* All if, else if constructs should contain a final else clause. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule60></a><a href=m60.html#rule60>rule60</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 61: Required */</h4><h4>/* Every non-empty case clause in a switch statement shall be */</h4><h4>/* terminated with a break statement. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule61></a><a href=m61.html#rule61>rule61</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 62: Required */</h4><h4>/* All switch statements should contain a final default clause. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule62></a><a href=m62.html#rule62>rule62</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 63: Advisory */</h4><h4>/* A switch expression should not represent a Boolean value. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule63></a><a href=m63.html#rule63>rule63</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 64: Required */</h4><h4>/* Every switch statement shall have at least one case. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule64></a><a href=m64.html#rule64>rule64</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 65: Required */</h4><h4>/* Floating point variables shall not be used as loop counters. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule65></a><a href=m65.html#rule65>rule65</a>
+<h4>/* DO NOTHING */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 66: Advisory */</h4><h4>/* Only expressions concerned with loop control should appear within a */</h4><h4>/* for statement. */</h4><h4>/* This is in general difficult to detect automatically and statically. */</h4><h4>/* The following gives a simple case. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule66></a><a href=m66.html#rule66>rule66</a>
+<h4>/* DO NOTHING */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 67: Advisory */</h4><h4>/* Numeric variables being used within a for loop for iteration */</h4><h4>/* counting should not be modified in the body of the loop. */</h4><h4>/* This is in general difficult to detect automatically and statically. */</h4><h4>/* The following gives a simple case. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func67></a><a href=m67.html#func67>func67</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule67></a><a href=m67.html#rule67>rule67</a>
+<h4>/* Arg passed by value */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 68: Required */</h4><h4>/* Functions shall always be declared at file scope. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule68></a><a href=m68.html#rule68>rule68</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 69: Required */</h4><h4>/* Functions with variable numbers of arguments shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule69></a><a href=m69.html#rule69>rule69</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 70: Required */</h4><h4>/* Functions shall not call themselves either directly or indirectly. */</h4><h4>/* It is trivial to detect direct recursion, but it can in some cases */</h4><h4>/* be impossible to detect indirect recursion statically. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule70></a><a href=m70.html#rule70>rule70</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 71: Required */</h4><h4>/* Functions shall always have prototype declarations and the */</h4><h4>/* prototype shall be visible at both the function definition and the */</h4><h4>/* call. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=rule71></a><a href=m71.html#rule71>rule71</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 72: Required */</h4><h4>/* For each function parameter the type given in the declaration and */</h4><h4>/* definition shall be identical, and the return types shall also be */</h4><h4>/* identical. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func72a></a><a href=m72.html#func72a>func72a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func72b></a><a href=m72.html#func72b>func72b</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func72c></a><a href=m72.html#func72c>func72c</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 73: Required */</h4><h4>/* Identifiers shall be given either for all of the parameters in a */</h4><h4>/* function prototype declaration or for none. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 74: Required */</h4><h4>/* If identifiers are given for any of the parameters, then the */</h4><h4>/* identifiers used in the declaration and definition shall be */</h4><h4>/* identical. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func74a></a><a href=m74.html#func74a>func74a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func74b></a><a href=m74.html#func74b>func74b</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 75: Required */</h4><h4>/* Every function shall have an explicit return type. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func75a></a><a href=m75.html#func75a>func75a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func75b></a><a href=m75.html#func75b>func75b</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 76: Required */</h4><h4>/* Functions with no parameters shall be declared with parameter type */</h4><h4>/* void. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 77: Required */</h4><h4>/* The unqualifed type of parameters passed to a function shall be */</h4><h4>/* compatible with the unqualified expected types defined in the */</h4><h4>/* function prototype. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func77c></a><a href=m77.html#func77c>func77c</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 78: Required */</h4><h4>/* The number of parameters passed to a function shall match the */</h4><h4>/* function prototype. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func78c></a><a href=m78.html#func78c>func78c</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 79: Required */</h4><h4>/* The values returned by void functions shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func79c></a><a href=m79.html#func79c>func79c</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 80: Required */</h4><h4>/* Void expressions shall not be passed as function parameters. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func80c></a><a href=m80.html#func80c>func80c</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 81: Advisory */</h4><h4>/* const qualification should be used on function parameters which are */</h4><h4>/* passed by reference, where it is intended that the function will */</h4><h4>/* not modify the parameter. */</h4><h4>/* Not statically enforceable. It is very difficult in practice to */</h4><h4>/* divine this intent automatically. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=myfunction></a><a href=m81.html#myfunction>myfunction</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=myfunction1></a><a href=m81.html#myfunction1>myfunction1</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 82: Advisory */</h4><h4>/* A function should have a single point of exit. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func82a></a><a href=m82.html#func82a>func82a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func82b></a><a href=m82.html#func82b>func82b</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func82c></a><a href=m82.html#func82c>func82c</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 83: Required */</h4><h4>/* For functions with non-void return type: */</h4><h4>/* i ) there shall be one return statement for every exit */</h4><h4>/* branch ( including the end of the program ) , */</h4><h4>/* ii ) each return shall have an expression, */</h4><h4>/* iii ) the return expression shall match the declared return */</h4><h4>/* type. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func83a></a><a href=m83.html#func83a>func83a</a>
+<h4>/* return; */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func83b></a><a href=m83.html#func83b>func83b</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func83c></a><a href=m83.html#func83c>func83c</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func83d></a><a href=m83.html#func83d>func83d</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 84: Required */</h4><h4>/* For functions with void return type, return statements shall not */</h4><h4>/* have an expression. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func84a></a><a href=m84.html#func84a>func84a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func84b></a><a href=m84.html#func84b>func84b</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 85: Advisory */</h4><h4>/* Functions called with no parameters should have empty parentheses. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func85a></a><a href=m85.html#func85a>func85a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func85b></a><a href=m85.html#func85b>func85b</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 86: Advisory */</h4><h4>/* If a function returns error information, then that error */</h4><h4>/* information shall be tested. */</h4><h4>/* Not statically enforceable. The method of testing is not */</h4><h4>/* sufficiently well-defined. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=m86></a><a href=m86.html#m86>m86</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 87: Required [ 2004 adv ] */</h4><h4>/* 19.1 ADV #include statements in a file shall only be preceded by other */</h4><h4>/* pre-processor directives or comments. */</h4><h4>/* 8.5 No defn's in a header file */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func87a></a><a href=m87.html#func87a>func87a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 88: Required */</h4><h4>/* Non-standard characters shall not occur in header file names in */</h4><h4>/* #include directives. */</h4><h4>/* RULE 88 */</h4><h4>/* RULE 88 */</h4><h4>/* RULE 88 */</h4><h4>/* * RULE 88 */</h4><h4>/* RULE 88 */</h4><h4>/* RULE 88 */</h4><h4>/* * RULE 88 */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* misra rule 89 #include include must be one of the following two forms */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 90: Required */</h4><h4>/* C macros shall only be used for symbolic constants, function-like */</h4><h4>/* macros, type qualifiers and storage class specifiers. */</h4><h4>/* RULE 90 */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func90a></a><a href=m90.html#func90a>func90a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 91: Required */</h4><h4>/* Macros shall not be #defined'd and #undef'd in a block. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func91a></a><a href=m91.html#func91a>func91a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 92: Advisory */</h4><h4>/* #undef should not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func92a></a><a href=m92.html#func92a>func92a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 93: Advisory */</h4><h4>/* A function should be used in preference to a function-like macro */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func93a></a><a href=m93.html#func93a>func93a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 94: Required */</h4><h4>/* A function-like macro shall not be 'called' without all its */</h4><h4>/* arguments. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func94a></a><a href=m94.html#func94a>func94a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 95: Required */</h4><h4>/* Arguments to a function-like macro shall not contain tokens that */</h4><h4>/* look like pre-processing directives. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func95a></a><a href=m95.html#func95a>func95a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 96: Required */</h4><h4>/* In the definition of a function-like macro the whole definition, */</h4><h4>/* and each instance of a parameter, shall be enclosed in parentheses. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func96></a><a href=m96.html#func96>func96</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 97: Advisory */</h4><h4>/* Identifiers in pre-processor directives should be defined before */</h4><h4>/* use. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func97></a><a href=m97.html#func97>func97</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 98: Required */</h4><h4>/* At most one of # or ## in a single macro definition */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func98></a><a href=m98.html#func98>func98</a>
+<h4>/* SC_8 msg2[] = STRINGS ( Hello, World ) ; */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 99: Required */</h4><h4>/* All uses of the #pragma directive shall be documented and */</h4><h4>/* explained. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 100: Required */</h4><h4>/* The defined pre-processor operator shall only be used in one of the */</h4><h4>/* two standard forms. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func100></a><a href=m100.html#func100>func100</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 101: Advisory */</h4><h4>/* Pointer arithmetic should not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func101></a><a href=m101.html#func101>func101</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 102: Advisory */</h4><h4>/* No more than 2 levels of pointer indirection should be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func102></a><a href=m102.html#func102>func102</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 103: Required */</h4><h4>/* Relational operators shall not be applied to pointer types except */</h4><h4>/* where both operands are of the same type and point to the same */</h4><h4>/* array, structure or union. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func103></a><a href=m103.html#func103>func103</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 104: Required */</h4><h4>/* Non-constant pointers to functions shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func104a></a><a href=m104.html#func104a>func104a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func104b></a><a href=m104.html#func104b>func104b</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func104></a><a href=m104.html#func104>func104</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 105: Required */</h4><h4>/* All the functions pointed by a single pointer function shall be */</h4><h4>/* identical in the number and type of parameters and the return type. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func105a></a><a href=m105.html#func105a>func105a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func105b></a><a href=m105.html#func105b>func105b</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func105c></a><a href=m105.html#func105c>func105c</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func105></a><a href=m105.html#func105>func105</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 106: Required */</h4><h4>/* The address of an object with automatic storage shall not be */</h4><h4>/* assigned to an object which may persist after the object has ceased */</h4><h4>/* to exist. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func106a></a><a href=m106.html#func106a>func106a</a>
+<h4>/* Returns pointer to automatic array. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func106b></a><a href=m106.html#func106b>func106b</a>
+<h4>/* Returns actual value. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func106c></a><a href=m106.html#func106c>func106c</a>
+<h4>/* Returns pointer to automatic. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func106d></a><a href=m106.html#func106d>func106d</a>
+<h4>/* Returns pointer to static. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func106e></a><a href=m106.html#func106e>func106e</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 107: Required */</h4><h4>/* The NULL pointer shall not be dereferenced. */</h4><h4>/* This is not statically detectable in all cases. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func107></a><a href=m107.html#func107>func107</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 108: Required */</h4><h4>/* In the specification of a structure or union type, all members of */</h4><h4>/* the structure or union shall be fully specified. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func108></a><a href=m108.html#func108>func108</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 109: Required */</h4><h4>/* Overlapping variable storage shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func109a></a><a href=m109.html#func109a>func109a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 110: Required */</h4><h4>/* Unions shall not be used to access the sub-parts of larger data */</h4><h4>/* types. */</h4><h4>/* This seems slightly odd as Rule 109 effectively precludes the use */</h4><h4>/* of unions at all. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func110></a><a href=m110.html#func110>func110</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 111: Required */</h4><h4>/* Bit fields shall only be defined to be of type unsigned int or */</h4><h4>/* signed int. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func111></a><a href=m111.html#func111>func111</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 112: Required */</h4><h4>/* Bit fields of type signed int shall be at least 2 bits long. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func112></a><a href=m112.html#func112>func112</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 113: Required */</h4><h4>/* All the members of a structure ( or union ) shall be named and shall */</h4><h4>/* only be accessed via their name. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func113></a><a href=m113.html#func113>func113</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 114: Required */</h4><h4>/* Reserved words and standard library function names shall not be */</h4><h4>/* redefined or undefined. */</h4><h4>/* Note the interaction with rule 92 on #undef. */</h4><h4>/* We do not look for reserved words here as most occurrences lead to */</h4><h4>/* syntax error. */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 115: Required */</h4><h4>/* Standard library function names shall not be reused. */</h4><h4>/* Same order as K&R II, appendix B. */</h4><h4>/* File operations */</h4><h4>/* now define the std's and cause a re-definition alert, aka misra-c:2004 20.2 */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=fopen></a><a href=m115.html#fopen>fopen</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=freopen></a><a href=m115.html#freopen>freopen</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=fflush></a><a href=m115.html#fflush>fflush</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=fclose></a><a href=m115.html#fclose>fclose</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=remove></a><a href=m115.html#remove>remove</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=rename></a><a href=m115.html#rename>rename</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=tmpfile></a><a href=m115.html#tmpfile>tmpfile</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=tmpnam></a><a href=m115.html#tmpnam>tmpnam</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=setvbuf></a><a href=m115.html#setvbuf>setvbuf</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=setbuf></a><a href=m115.html#setbuf>setbuf</a>
+<h4>/* Formatted output. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=fprintf></a><a href=m115.html#fprintf>fprintf</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=printf></a><a href=m115.html#printf>printf</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=sprintf></a><a href=m115.html#sprintf>sprintf</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=vprintf></a><a href=m115.html#vprintf>vprintf</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=vfprintf></a><a href=m115.html#vfprintf>vfprintf</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=vsprintf></a><a href=m115.html#vsprintf>vsprintf</a>
+<h4>/* Formatted input. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=fscanf></a><a href=m115.html#fscanf>fscanf</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=scanf></a><a href=m115.html#scanf>scanf</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=sscanf></a><a href=m115.html#sscanf>sscanf</a>
+<h4>/* Character Input and Output functions */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=fgetc></a><a href=m115.html#fgetc>fgetc</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=fgets></a><a href=m115.html#fgets>fgets</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=fputc></a><a href=m115.html#fputc>fputc</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=fputs></a><a href=m115.html#fputs>fputs</a>
+<h4>/* Direct Input and Output functions */</h4><h4>/* File positioning functions */</h4><h4>/* Error functions */</h4><h4>/* Character class tests */</h4><h4>/* String functions */</h4><h4>/* Mathematical functions */</h4><h4>/* Utility functions */</h4><h4>/* Non-local Jumps */</h4><h4>/* Signals */</h4><h4>/* Date and time functions */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 116: Required */</h4><h4>/* All libraries used in production code shall be written to comply */</h4><h4>/* with the provisions of this document, and shall have been subject */</h4><h4>/* to appropriate validation. */</h4><h4>/* Not automatically enforceable by a simple rule. */</h4><h4>/* verify that the prototypes agree with the stdlib's misra-c:2004 3.6 */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 117: Required */</h4><h4>/* The validity of values passed to library functions shall be */</h4><h4>/* checked. */</h4><h4>/* Not automatically enforceable by a simple rule although there are */</h4><h4>/* some examples which are worth checking. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func117></a><a href=m117.html#func117>func117</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 118: Required */</h4><h4>/* Dynamic heap memory allocation shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func118></a><a href=m118.html#func118>func118</a>
+<h4>/* Doubly dangerous */</h4><h4>/* pd might move */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 119: Required */</h4><h4>/* The error indicator errno shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func119></a><a href=m119.html#func119>func119</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 120: Required */</h4><h4>/* The macro offsetof shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func120></a><a href=m120.html#func120>func120</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 121: Required */</h4><h4>/* <locale.h>and the setlocale function shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func121></a><a href=m121.html#func121>func121</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 122: Required */</h4><h4>/* The setjmp macro and the longjmp function shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func122></a><a href=m122.html#func122>func122</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 123: Required */</h4><h4>/* The signal handling facilities of <signal.h>shall not be used */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func123a></a><a href=m123.html#func123a>func123a</a>
+<pre>
+MISRA-C [1998:2004] Function Definition: <a name=func123></a><a href=m123.html#func123>func123</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 124: Required */</h4><h4>/* output header file <stdio.h>must not be used. */</h4><h4>/* ( The standards says library, but this is a header file containing */</h4><h4>/* o functions amongst other things. ) */</h4><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 125: Required */</h4><h4>/* The library functions atof, atoi and atol from header file */</h4><h4>/* <stdlib.h>shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func125a></a><a href=m125.html#func125a>func125a</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 126: Required */</h4><h4>/* The library functions abort, exit, getenv and system from */</h4><h4>/* <stdlib.h>shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func126></a><a href=m126.html#func126>func126</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><h4>/* Misra C Enforcement Testing */</h4><h4>/* Rule 127: Required */</h4><h4>/* The time handling functions of <time.h>shall not be used. */</h4><pre>
+MISRA-C [1998:2004] Function Definition: <a name=func127></a><a href=m127.html#func127>func127</a>
+
+<h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2><hr><pre><a href=misra-index.html>Abraxas/Misra Home</a>  <a href=toc.html>Table of Contents</a>  MISRA is a registered trademark of <a href=http://www.misra.org.uk>www.misra.uk.org</a> </pre><h4><a href=http://www.abraxas-software.com>ABRAXAS SOFTWARE</a> - CodeCheck MISRA Test-Suite Misra-C:1998 Misra-C:2004.</h2></body></html>

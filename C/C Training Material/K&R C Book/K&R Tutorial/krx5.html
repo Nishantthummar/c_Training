@@ -1,0 +1,433 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="krx5_files/filelist.xml">
+<title> The C Programming Language Answers To Exercises - Chapter 5 </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dhruvesh</o:Author>
+  <o:LastAuthor>Dhruvesh</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2007-10-31T06:54:00Z</o:Created>
+  <o:LastSaved>2007-10-31T07:00:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>521</o:Words>
+  <o:Characters>2970</o:Characters>
+  <o:Lines>24</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3485</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	color:black;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:maroon;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:navy;
+	text-decoration:underline;
+	text-underline:single;}
+code
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:SimSun;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:SimSun;
+	color:black;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#DDDDDD" lang=EN-US link=maroon vlink=navy style='tab-interval:
+.5in' alink="#008000">
+
+<div class=Section1>
+
+<h2>&quot;The C Programming Language&quot;, 2nd edition, Kernighan and Ritchie </h2>
+
+<h2>Chapter 5 - Pointers and Arrays </h2>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Ex No <o:p></o:p></b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Exercise <o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>As written, <code><span style='font-size:10.0pt'>getint</span></code>
+  treats a <code><span style='font-size:10.0pt'>+</span></code> or <code><span
+  style='font-size:10.0pt'>-</span></code> not followed by a digit as a valid
+  representation of zero. Fix it to push such a character back on the input. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write <code><span style='font-size:10.0pt'>getfloat</span></code>
+  , the floating-point analog of <code><span style='font-size:10.0pt'>getint</span></code>
+  . What type does <code><span style='font-size:10.0pt'>getfloat</span></code>
+  return as its function value? </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write a pointer version of the function <code><span
+  style='font-size:10.0pt'>strcat</span></code> that we showed in Chapter 2: <code><span
+  style='font-size:10.0pt'>strcat(s,t)</span></code> copies the string <code><span
+  style='font-size:10.0pt'>t</span></code> to the end of <code><span
+  style='font-size:10.0pt'>s</span></code> . </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write the function <code><span style='font-size:10.0pt'>strend(s,t)</span></code>
+  , which returns 1 if the string <code><span style='font-size:10.0pt'>t</span></code>
+  occurs at the end of the string <code><span style='font-size:10.0pt'>s</span></code>
+  , and zero otherwise. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write versions of the library functions <code><span
+  style='font-size:10.0pt'>strncpy</span></code> , <code><span
+  style='font-size:10.0pt'>strncat</span></code> , and <code><span
+  style='font-size:10.0pt'>strncmp</span></code> , which operate on at most the
+  first <code><span style='font-size:10.0pt'>n</span></code> characters of
+  their argument strings. For example, <code><span style='font-size:10.0pt'>strncpy(s,t,n)</span></code>
+  copies at most <code><span style='font-size:10.0pt'>n</span></code>
+  characters of <code><span style='font-size:10.0pt'>t</span></code> to <code><span
+  style='font-size:10.0pt'>s</span></code> . Full descriptions are in Appendix
+  B. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Rewrite appropriate programs from earlier chapters and
+  exercises with pointers instead of array indexing. Good possibilities include
+  <code><span style='font-size:10.0pt'>getline</span></code> (Chapters 1 and
+  4), <code><span style='font-size:10.0pt'>atoi</span></code> , <code><span
+  style='font-size:10.0pt'>itoa</span></code> , and their variants (Chapters 2,
+  3, and 4), <code><span style='font-size:10.0pt'>reverse</span></code>
+  (Chapter 3), and <code><span style='font-size:10.0pt'>strindex</span></code>
+  and <code><span style='font-size:10.0pt'>getop</span></code> (Chapter 4). </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>7 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Rewrite <code><span style='font-size:10.0pt'>readlines</span></code>
+  to store lines in an array supplied by <code><span style='font-size:10.0pt'>main</span></code>
+  , rather than calling <code><span style='font-size:10.0pt'>alloc</span></code>
+  to maintain storage. How much faster is the program? </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>There is no error-checking in <code><span
+  style='font-size:10.0pt'>day_of_year</span></code> or <code><span
+  style='font-size:10.0pt'>month_day.</span></code> Remedy this defect. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>9 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Rewrite the routines <code><span style='font-size:10.0pt'>day_of_year</span></code>
+  and <code><span style='font-size:10.0pt'>month_day</span></code> with
+  pointers instead of indexing. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write the program <code><span style='font-size:10.0pt'>expr</span></code>
+  , which evaluates a reverse Polish expression from the command line, where
+  each operator or operand is a separate argument. For example, <br>
+  <code><span style='font-size:10.0pt'>expr</span></code> <code><span
+  style='font-size:10.0pt'>2</span></code> <code><span style='font-size:10.0pt'>3</span></code>
+  <code><span style='font-size:10.0pt'>4</span></code> <code><span
+  style='font-size:10.0pt'>+</span></code> <code><span style='font-size:10.0pt'>*</span></code>
+  <br>
+  evaluates 2 X (3+4). </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>11 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Modify the programs <code><span style='font-size:10.0pt'>entab</span></code>
+  and <code><span style='font-size:10.0pt'>detab</span></code> (written as
+  exercises in Chapter 1) to accept a list of tab stops as arguments. Use the
+  default tab settings if there are no arguments. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>12 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Extend <code><span style='font-size:10.0pt'>entab</span></code>
+  and <code><span style='font-size:10.0pt'>detab</span></code> to accept the
+  shorthand <br>
+  <code><span style='font-size:10.0pt'>entab</span></code> <code><i><span
+  style='font-size:10.0pt'>-m</span></i></code><i> </i><code><i><span
+  style='font-size:10.0pt'>+n</span></i></code><i> </i>to mean tab stops every <i>n
+  </i>columns, starting at column <i>m </i>. Choose convenient (for the user)
+  default behavior. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>13 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write the program <code><span style='font-size:10.0pt'>tail,</span></code>
+  which prints the last <code><span style='font-size:10.0pt'>n</span></code>
+  lines of its input. By default, <code><span style='font-size:10.0pt'>n</span></code>
+  is 10, say, but it can be changed by an optional argument, so that <code><span
+  style='font-size:10.0pt'><o:p></o:p></span></code></p>
+  <pre><o:p>&nbsp;</o:p></pre><pre><span style='mso-spacerun:yes'>&nbsp; </span><span
+  style='color:green'>tail</span> <span style='color:navy'>-</span><span
+  style='color:green'>n</span></pre>
+  <p class=MsoNormal><br>
+  prints the last <code><span style='font-size:10.0pt'>n</span></code> lines.
+  The program should behave rationally no matter how unreasonable the input or
+  the value of <code><span style='font-size:10.0pt'>n.</span></code> Write the
+  program so it makes the best use of available storage; lines should be stored
+  as in the sorting program of Section 5.6, not in a two-dimensional array of
+  fixed size. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>14 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Modify the sort program to handle a <code><span
+  style='font-size:10.0pt'>-r</span></code> flag, which indicates sorting in
+  reverse (decreasing) order. Be sure that <code><span style='font-size:10.0pt'>-r</span></code>
+  works with <code><span style='font-size:10.0pt'>-n.</span></code> </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>15 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Add the option <code><span style='font-size:10.0pt'>-f</span></code>
+  to fold upper and lower case together, so that case distinctions are not made
+  during sorting; for example, <code><span style='font-size:10.0pt'>a</span></code>
+  and <code><span style='font-size:10.0pt'>A</span></code> compare equal. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>16 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Add the <code><span style='font-size:10.0pt'>-d</span></code>
+  (&quot;directory order&quot;) option, which makes comparisons only on
+  letters, numbers and blanks. Make sure it works in conjunction with <code><span
+  style='font-size:10.0pt'>-f</span></code><code><span style='mso-ansi-font-size:
+  12.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman"'> .</span></code>
+  </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>17 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Add a field-handling capability, so sorting may be done on
+  fields within lines, each field sorted according to an independent set of
+  options. (The index for this book was sorted with <code><span
+  style='font-size:10.0pt'>-df</span></code> for the index category and <code><span
+  style='font-size:10.0pt'>-n</span></code> for the page numbers.) </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>18 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Make <code><span style='font-size:10.0pt'>dcl</span></code>
+  recover from input errors. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>19 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Modify <code><span style='font-size:10.0pt'>undcl</span></code>
+  so that it does not add redundant parentheses to declarations. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>20 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Expand <code><span style='font-size:10.0pt'>dcl</span></code>
+  to handle declarations with function argument types, qualifiers like <code><span
+  style='font-size:10.0pt'>const</span></code> , and so on. </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><span
+style='mso-spacerun:yes'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><a href="krx4.html">Prev</a> <a
+href="krx6.html">Next</a></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+		Linux Coding style check list
+--------------------------------------------------------------------------------
+
+1) Spaces are 8-char
+2) No white spaces at end of line
+3) Max column length is 80
+4) Opening bracket on same line and closing bracket on last line
+   ie if(){
+	statment
+   }
+  for function it will be on next line
+   a()
+   {	
+   }
+5) For if elseif looping, elseif will start on same line of ending bracket of if. 
+   ie if(){
+      } else {
+      }			
+6) Use names that are simple and easily understable
+7) Functions shoule be modular.It should be complete in 2 full text of screen.For functions which cannot
+   be broken are allowed to be longer.
+8) Functions should not have more thab 5-10 local variables.
+9) Use goto if possible for central exiting of function
+10) Put useful comments
+11) Names of macro and constants should be capitalized

@@ -1,0 +1,309 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="krx2_files/filelist.xml">
+<title> The C Programming Language Answers To Exercises - Chapter 2 </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dhruvesh</o:Author>
+  <o:LastAuthor>Dhruvesh</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2007-10-31T06:48:00Z</o:Created>
+  <o:LastSaved>2007-10-31T06:58:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>288</o:Words>
+  <o:Characters>1644</o:Characters>
+  <o:Lines>13</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1929</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	color:black;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:maroon;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:navy;
+	text-decoration:underline;
+	text-underline:single;}
+code
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:SimSun;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#DDDDDD" lang=EN-US link=maroon vlink=navy style='tab-interval:
+.5in' alink="#008000">
+
+<div class=Section1>
+
+<h2>&quot;The C Programming Language&quot;, 2nd edition, Kernighan and Ritchie </h2>
+
+<h2>Chapter 2 - Types, Operators and Expressions </h2>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Ex No <o:p></o:p></b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Exercise <o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write a program to determine the ranges of <code><span
+  style='font-size:10.0pt'>char</span></code> , <code><span style='font-size:
+  10.0pt'>short</span></code> , <code><span style='font-size:10.0pt'>int</span></code>
+  , and <code><span style='font-size:10.0pt'>long</span></code> variables, both
+  <code><span style='font-size:10.0pt'>signed</span></code> and <code><span
+  style='font-size:10.0pt'>unsigned</span></code> , by printing appropriate
+  values from standard headers and by direct computation. Harder if you compute
+  them: determine the ranges of the various floating-point types. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write a loop equivalent to the <code><span
+  style='font-size:10.0pt'>for</span></code> loop above without using <code><span
+  style='font-size:10.0pt'>&amp;&amp;</span></code> or <code><span
+  style='font-size:10.0pt'>||</span></code><code><span style='mso-ansi-font-size:
+  12.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman"'> .</span></code></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write the function <code><span style='font-size:10.0pt'>htoi(s)</span></code><code><span
+  style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman"'>
+  ,</span></code> which converts a string of hexadecimal digits (including an
+  optional <code><span style='font-size:10.0pt'>0x</span></code> or <code><span
+  style='font-size:10.0pt'>0X)</span></code> into its equivalent integer value.
+  The allowable digits are <code><span style='font-size:10.0pt'>0</span></code>
+  through <code><span style='font-size:10.0pt'>9,</span></code> <code><span
+  style='font-size:10.0pt'>a</span></code> through <code><span
+  style='font-size:10.0pt'>f,</span></code> and <code><span style='font-size:
+  10.0pt'>A</span></code> through <code><span style='font-size:10.0pt'>F</span></code>
+  . </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write an alternate version of <code><span
+  style='font-size:10.0pt'>squeeze(s1,s2)</span></code> that deletes each
+  character in the string <code><span style='font-size:10.0pt'>s1</span></code>
+  that matches any character in the <i>string </i><code><span style='font-size:
+  10.0pt'>s2</span></code> . </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write the function <code><span style='font-size:10.0pt'>any(s1,s2)</span></code>
+  , which returns the first location in the string <code><span
+  style='font-size:10.0pt'>s1</span></code> where any character from the string
+  <code><span style='font-size:10.0pt'>s2</span></code> occurs, or <code><span
+  style='font-size:10.0pt'>-1</span></code> if <code><span style='font-size:
+  10.0pt'>s1</span></code> contains no characters from <code><span
+  style='font-size:10.0pt'>s2</span></code> . (The standard library function <code><span
+  style='font-size:10.0pt'>strpbrk</span></code> does the same job but returns
+  a pointer to the location.) </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write a function <code><span style='font-size:10.0pt'>setbits(x,p,n,y)</span></code>
+  that returns <code><span style='font-size:10.0pt'>x</span></code> with the <code><span
+  style='font-size:10.0pt'>n</span></code> bits that begin at position <code><span
+  style='font-size:10.0pt'>p</span></code> set to the rightmost <code><span
+  style='font-size:10.0pt'>n</span></code> bits of <code><span
+  style='font-size:10.0pt'>y,</span></code> leaving the other bits unchanged. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>7 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write a function <code><span style='font-size:10.0pt'>invert(x,p,n)</span></code>
+  that returns <code><span style='font-size:10.0pt'>x</span></code> with the <code><span
+  style='font-size:10.0pt'>n</span></code> bits that begin at position <code><span
+  style='font-size:10.0pt'>p</span></code> inverted (i.e., 1 changed into 0 and
+  vice versa), leaving the others unchanged. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write a function <code><span style='font-size:10.0pt'>rightrot(x,n)</span></code>
+  that returns the value of the integer <code><span style='font-size:10.0pt'>x</span></code>
+  rotated to the right by <code><span style='font-size:10.0pt'>n</span></code>
+  bit positions. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>9 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>In a two's complement number system, <code><span
+  style='font-size:10.0pt'>x</span></code> <code><span style='font-size:10.0pt'>&amp;=</span></code>
+  <code><span style='font-size:10.0pt'>(x-1)</span></code> deletes the
+  rightmost 1-bit in <code><span style='font-size:10.0pt'>x</span></code> .
+  Explain why. Use this observation to write a faster version of <code><span
+  style='font-size:10.0pt'>bitcount</span></code> . </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Rewrite the function lower, which converts upper case
+  letters to lower case, with a conditional expression instead of <code><span
+  style='font-size:10.0pt'>if-else</span></code><code><span style='mso-ansi-font-size:
+  12.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman"'> .</span></code>
+  </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><a href="krx1.html">Prev</a> <a
+href="krx3.html">Next</a></p>
+
+</div>
+
+</body>
+
+</html>

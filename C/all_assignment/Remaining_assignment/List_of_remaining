@@ -1,0 +1,28 @@
+=> Remaining Assignment List
+(Out of 7 chapters)
+
+Ch-4)(4.4)    Add commands to print the top element of the stack without popping, to duplicate it, and to swap the top two elements. Add a command to clear the stack.
+
+(4.5)	Add access to library functions like sin , exp , and pow . See <math.h> in Appendix B, Section 4. ///////this is done on 25/02/2020
+
+(4.11)	Modify getop so that it doesn't need to use ungetch. Hint: use an internal static variable.
+
+(4.12)	Adapt the ideas of printd to write a recursive version of itoa ; that is, convert an integer into a string by calling a recursive routine. ///////this is done on 25/02/2020
+
+Ch-5)(5.1)	As written, getint treats a + or - not followed by a digit as a valid representation of zero. Fix it to push such a character back on the input. 
+
+(5.3)	Write a pointer version of the function strcat that we showed in Chapter 2: strcat(s,t) copies the string t to the end of s . 
+
+(5.7)	Rewrite readlines to store lines in an array supplied by main , rather than calling alloc to maintain storage. How much faster is the program? 
+
+(5.8)	There is no error-checking in day_of_year or month_day. Remedy this defect. 
+
+(5.10)	expr 2 3 4 + *
+evaluates 2 X (3+4) ///////this is done on 25/02/2020 it is same as 4.5 
+
+(5.13)	tail -n
+prints the last n lines. The program should behave rationally no matter how unreasonable the input or the value of n. Write the program so it makes the best use of available storage; lines should be stored as in the sorting program of Section 5.6, not in a two-dimensional array of fixed size. 
+
+Ch-6)(6.1)	Our version of getword does not properly handle underscores, string constants, comments, or preprocessor control lines. Write a better version. 
+
+Ch-7)(7.5)	Rewrite the postfix calculator of Chapter 4 to use scanf and/or sscanf to do the input and number conversion. 

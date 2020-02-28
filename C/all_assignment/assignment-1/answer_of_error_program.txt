@@ -1,0 +1,8 @@
+
+
+
+
+
+If I do't write ");" then its give Error: expected ‘)’ before ‘}’ token
+					  expected ‘;’ before ‘}’ token 
+If I leave some portion of progran out side main then its give Error: expected declaration specifiers or ‘...’ before string constant

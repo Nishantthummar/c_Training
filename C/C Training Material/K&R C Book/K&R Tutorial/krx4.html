@@ -1,0 +1,336 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="krx4_files/filelist.xml">
+<title> The C Programming Language Answers To Exercises - Chapter 4 </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dhruvesh</o:Author>
+  <o:LastAuthor>Dhruvesh</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>3</o:TotalTime>
+  <o:Created>2007-10-31T06:50:00Z</o:Created>
+  <o:LastSaved>2007-10-31T06:59:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>350</o:Words>
+  <o:Characters>1999</o:Characters>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2345</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	color:black;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:maroon;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:navy;
+	text-decoration:underline;
+	text-underline:single;}
+code
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:SimSun;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#DDDDDD" lang=EN-US link=maroon vlink=navy style='tab-interval:
+.5in' alink="#008000">
+
+<div class=Section1>
+
+<h2>&quot;The C Programming Language&quot;, 2nd edition, Kernighan and Ritchie </h2>
+
+<h2>Chapter 4 - Functions and Program Structure </h2>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><br>
+If you are intending to attempt solutions 4-3 through 4-10, you will find testing
+your solution to be a somewhat less laborious task if you download the
+following code: <br>
+<br>
+<a href="krx400.html">Kernighan and Ritchie's Polish calculator source </a></p>
+
+<table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Ex No <o:p></o:p></b></p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b>Exercise <o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>1 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write the function <code><span style='font-size:10.0pt'>strrindex(s,t)</span></code>
+  , which returns the position of the <i>rightmost </i>occurrence of <code><span
+  style='font-size:10.0pt'>t</span></code> in <code><span style='font-size:
+  10.0pt'>s</span></code> , or -1 if there is none. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>2 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Extend <code><span style='font-size:10.0pt'>atof</span></code>
+  to handle scientific notation of the form <code><span style='font-size:10.0pt'>123.45e-6</span></code>
+  where a floating-point number may be followed by e or E and an optionally
+  signed exponent. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>3 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Given the basic framework, it's straightforward to extend
+  the calculator. Add the modulus ( <code><span style='font-size:10.0pt'>%</span></code>
+  ) operator and provisions for negative numbers. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>4 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Add commands to print the top element of the stack without
+  popping, to duplicate it, and to swap the top two elements. Add a command to
+  clear the stack. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>5 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Add access to library functions like <code><span
+  style='font-size:10.0pt'>sin</span></code> , <code><span style='font-size:
+  10.0pt'>exp</span></code> , and <code><span style='font-size:10.0pt'>pow</span></code>
+  . See <code><span style='font-size:10.0pt'>&lt;math.h&gt;</span></code> in
+  Appendix B, Section 4. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>6 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Add commands for handling variables. (It's easy to provide
+  twenty-six variables with single-letter names.) Add a variable for the most
+  recently printed value. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>7 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write a routine <code><span style='font-size:10.0pt'>ungets(s)</span></code>
+  that will push back an entire string onto the input. Should <code><span
+  style='font-size:10.0pt'>ungets</span></code> know about <code><span
+  style='font-size:10.0pt'>buf</span></code> and <code><span style='font-size:
+  10.0pt'>bufp</span></code> , or should it just use <code><span
+  style='font-size:10.0pt'>ungetch</span></code> ? </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>8 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Suppose that there will never be more than one character
+  of pushback. Modify <code><span style='font-size:10.0pt'>getch</span></code>
+  and <code><span style='font-size:10.0pt'>ungetch</span></code> accordingly. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>9 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Our <code><span style='font-size:10.0pt'>getch</span></code>
+  and <code><span style='font-size:10.0pt'>ungetch</span></code> do not handle
+  a pushed-back <code><span style='font-size:10.0pt'>EOF</span></code>
+  correctly. Decide what their properties ought to be if an <code><span
+  style='font-size:10.0pt'>EOF</span></code> is pushed back, then implement
+  your design. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>10 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>An alternate organization uses <code><span
+  style='font-size:10.0pt'>getline</span></code> to read an entire input line;
+  this makes <code><span style='font-size:10.0pt'>getch</span></code> and <code><span
+  style='font-size:10.0pt'>ungetch</span></code> unnecessary. Revise the
+  calculator to use this approach. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>11 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Modify <code><span style='font-size:10.0pt'>getop</span></code>
+  so that it doesn't need to use <code><span style='font-size:10.0pt'>ungetch.</span></code>
+  Hint: use an internal <code><span style='font-size:10.0pt'>static</span></code>
+  variable. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>12 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Adapt the ideas of <code><span style='font-size:10.0pt'>printd</span></code>
+  to write a recursive version of <code><span style='font-size:10.0pt'>itoa</span></code>
+  ; that is, convert an integer into a string by calling a recursive routine. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>13 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Write a recursive version of the function <code><span
+  style='font-size:10.0pt'>reverse(s)</span></code> , which reverses the string
+  <code><span style='font-size:10.0pt'>s</span></code> in place. </p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>14 </p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal>Define a macro <code><span style='font-size:10.0pt'>swap(t,x,y)</span></code>
+  that interchanges two arguments of type <code><span style='font-size:10.0pt'>t</span></code>
+  . (Block structure will help.) </p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><span
+style='mso-spacerun:yes'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'><a href="krx3.html">Prev</a> <a
+href="krx5.html">Next</a></p>
+
+</div>
+
+</body>
+
+</html>
